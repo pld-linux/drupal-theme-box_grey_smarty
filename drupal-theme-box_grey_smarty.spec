@@ -2,7 +2,7 @@
 Summary:	Drupal Theme Box_grey_smarty
 Name:		drupal-theme-%{themename}
 Version:	4.6.0
-Release:	0.3
+Release:	0.5
 Epoch:		0
 License:	GPL v2
 Group:		Applications/WWW
@@ -33,10 +33,10 @@ install *.{css,png}  $RPM_BUILD_ROOT%{_themehtmldir}/%{themename}
 install *.tpl $RPM_BUILD_ROOT%{_themedir}/%{themename}
 ln -s ../../htdocs/themes/%{themename}/screenshot.png $RPM_BUILD_ROOT%{_themedir}/%{themename}
 
-# subtheme box_cleanslate_smarty
-install -d $RPM_BUILD_ROOT{%{_themehtmldir},%{_themedir}}/%{themename}/box_cleanslate_smarty
+# theme style box_cleanslate_smarty
+install -d $RPM_BUILD_ROOT{%{_themehtmldir}/%{themename}/box_cleanslate_smarty,%{_themedir}}/%{themename}}
 install box_cleanslate_smarty/*.{css,png} $RPM_BUILD_ROOT%{_themehtmldir}/%{themename}/box_cleanslate_smarty
-ln -s ../../../htdocs/themes/%{themename}/box_cleanslate_smarty/screenshot.png $RPM_BUILD_ROOT%{_themedir}/%{themename}/box_cleanslate_smarty
+ln -s ../../htdocs/themes/%{themename}/box_cleanslate_smarty $RPM_BUILD_ROOT%{_themedir}/%{themename}/box_cleanslate_smarty
 
 %clean
 rm -rf $RPM_BUILD_ROOT
