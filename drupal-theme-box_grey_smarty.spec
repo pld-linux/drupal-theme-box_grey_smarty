@@ -1,8 +1,8 @@
 %define		themename box_grey_smarty
 Summary:	Drupal Theme Box_grey_smarty
-Name:		drupal-mod-%{themename}
+Name:		drupal-theme-%{themename}
 Version:	4.6.0
-Release:	0.2
+Release:	0.3
 Epoch:		0
 License:	GPL v2
 Group:		Applications/WWW
@@ -40,6 +40,7 @@ ln -s ../../../htdocs/themes/%{themename}/box_cleanslate_smarty/screenshot.png $
 
 %clean
 rm -rf $RPM_BUILD_ROOT
+
 %files
 %defattr(644,root,root,755)
 %doc *.txt
