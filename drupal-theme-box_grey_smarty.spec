@@ -1,5 +1,6 @@
 %define		themename box_grey_smarty
 Summary:	Drupal Theme Box_grey_smarty
+Summary(pl):	Motyw Box_grey_smarty dla Drupala
 Name:		drupal-theme-%{themename}
 Version:	4.6.0
 Release:	0.5
@@ -19,6 +20,9 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 A port of the original box_grey theme for the Smarty template engine.
+
+%description -l pl
+Port oryginalnego motywu box_grey dla silnika szablonów Smarty.
 
 %prep
 %setup -q -n %{themename}
