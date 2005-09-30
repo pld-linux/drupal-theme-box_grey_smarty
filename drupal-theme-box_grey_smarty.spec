@@ -3,8 +3,7 @@ Summary:	Drupal Theme Box_grey_smarty
 Summary(pl):	Motyw Box_grey_smarty dla Drupala
 Name:		drupal-theme-%{themename}
 Version:	4.6.0
-Release:	0.5
-Epoch:		0
+Release:	0.6
 License:	GPL v2
 Group:		Applications/WWW
 Source0:	http://drupal.org/files/projects/%{themename}-%{version}.tar.gz
@@ -15,8 +14,10 @@ Requires:	drupal-themeengine-smarty >= 4.6.0
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
-%define		_themedir		%{_datadir}/drupal/themes
-%define		_themehtmldir	%{_datadir}/drupal/htdocs/themes
+%define		_drupaldir		%{_datadir}/drupal
+%define		_htdocs			%{_drupaldir}/htdocs
+%define		_themedir		%{_drupaldir}/themes
+%define		_themehtmldir	%{_htdocs}/themes
 
 %description
 A port of the original box_grey theme for the Smarty template engine.
