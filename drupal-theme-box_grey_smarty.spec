@@ -1,7 +1,7 @@
 %define		themename box_grey_smarty
 %define		_ver 4.6
 Summary:	Drupal Theme Box_grey_smarty
-Summary(pl.UTF-8):   Motyw Box_grey_smarty dla Drupala
+Summary(pl.UTF-8):	Motyw Box_grey_smarty dla Drupala
 Name:		drupal-theme-%{themename}
 Version:	%{_ver}.0
 Release:	0.9
